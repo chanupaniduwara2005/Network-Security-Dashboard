@@ -1,0 +1,16 @@
+{
+  "ALT-CHECKLIST-01": {
+    "alert_id": "ALT-CHECKLIST-01",
+    "status": "Open",
+    "notes": "",
+    "disposition_reason": "",
+    "checklist": {
+      "Review the failed and successful login sequence.": true,
+      "Check whether the source IP appears across other alerts.": true,
+      "Review the affected account and event timestamps.": false,
+      "Determine whether the activity is expected.": false,
+      "Record a reason for the final disposition.": false
+    },
+    "updated_at": "2026-10-25 06:37:00Z"
+  }
+}

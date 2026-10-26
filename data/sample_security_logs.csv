@@ -1,0 +1,56 @@
+event_id,timestamp,event_type,username,source_ip,destination_ip,status,hostname,message
+EVT-1001,2026-10-24T08:00:15Z,LOGIN,alice.smith,192.0.2.10,10.0.1.50,SUCCESS,workstation-01,Standard morning interactive login
+EVT-1002,2026-10-24T08:05:22Z,LOGIN,bob.jones,192.0.2.11,10.0.1.50,SUCCESS,workstation-02,Standard morning interactive login
+EVT-1003,2026-10-24T08:12:40Z,FILE_ACCESS,alice.smith,192.0.2.10,10.0.1.55,SUCCESS,fileserver-01,Read document /shares/finance/q3_report.pdf
+EVT-1004,2026-10-24T08:15:02Z,LOGIN,carol.danvers,192.0.2.12,10.0.1.50,FAILED,workstation-03,Bad credentials provided
+EVT-1005,2026-10-24T08:15:45Z,LOGIN,carol.danvers,192.0.2.12,10.0.1.50,SUCCESS,workstation-03,User retry successful after single failure
+EVT-1006,2026-10-24T08:20:10Z,LOGOUT,bob.jones,192.0.2.11,10.0.1.50,SUCCESS,workstation-02,User session closed normally
+EVT-1007,2026-10-24T08:30:19Z,LOGIN,david.miller,192.0.2.14,10.0.1.50,SUCCESS,workstation-04,Remote VPN user session established
+EVT-1008,2026-10-24T08:45:33Z,PRIVILEGE_ELEVATION,alice.smith,192.0.2.10,10.0.1.60,SUCCESS,auth-server,Sudo command executed for maintenance
+EVT-1009,2026-10-24T09:00:00Z,LOGIN,emily.clark,192.0.2.15,10.0.1.50,SUCCESS,workstation-05,User interactive login
+EVT-1010,2026-10-24T09:05:12Z,FILE_ACCESS,david.miller,192.0.2.14,10.0.1.55,SUCCESS,fileserver-01,Accessed project folder /shares/engineering
+EVT-1011,2026-10-24T09:14:01Z,LOGIN,admin,198.51.100.45,10.0.1.50,FAILED,gateway-fw01,Failed password attempt for root/admin account
+EVT-1012,2026-10-24T09:14:07Z,LOGIN,admin,198.51.100.45,10.0.1.50,FAILED,gateway-fw01,Failed password attempt for root/admin account
+EVT-1013,2026-10-24T09:14:14Z,LOGIN,admin,198.51.100.45,10.0.1.50,FAILED,gateway-fw01,Failed password attempt for root/admin account
+EVT-1014,2026-10-24T09:14:21Z,LOGIN,admin,198.51.100.45,10.0.1.50,FAILED,gateway-fw01,Failed password attempt for root/admin account
+EVT-1015,2026-10-24T09:14:29Z,LOGIN,admin,198.51.100.45,10.0.1.50,FAILED,gateway-fw01,Failed password attempt for root/admin account
+EVT-1016,2026-10-24T09:14:38Z,LOGIN,admin,198.51.100.45,10.0.1.50,FAILED,gateway-fw01,Failed password attempt for root/admin account
+EVT-1017,2026-10-24T09:14:46Z,LOGIN,admin,198.51.100.45,10.0.1.50,FAILED,gateway-fw01,Failed password attempt for root/admin account
+EVT-1018,2026-10-24T09:15:00Z,LOGIN,admin,198.51.100.45,10.0.1.50,BLOCKED,gateway-fw01,IP auto-blocked by rate limiter after rapid failures
+EVT-1019,2026-10-24T09:30:15Z,LOGIN,frank.castle,192.0.2.18,10.0.1.50,SUCCESS,workstation-06,Standard morning interactive login
+EVT-1020,2026-10-24T09:42:01Z,FILE_ACCESS,frank.castle,192.0.2.18,10.0.1.55,SUCCESS,fileserver-01,Read marketing assets directory
+EVT-1021,2026-10-24T10:00:11Z,LOGIN,sarah.connors,192.0.2.20,10.0.1.50,SUCCESS,workstation-07,Local domain login in New York office
+EVT-1022,2026-10-24T10:04:49Z,LOGIN,sarah.connors,203.0.113.195,10.0.1.50,SUCCESS,workstation-07,Suspicious login from overseas IP address
+EVT-1023,2026-10-24T10:15:20Z,LOGOUT,sarah.connors,192.0.2.20,10.0.1.50,SUCCESS,workstation-07,Session termination on primary workstation
+EVT-1024,2026-10-24T10:30:00Z,LOGIN,george.baker,192.0.2.22,10.0.1.50,SUCCESS,workstation-08,Regular developer workstation login
+EVT-1025,2026-10-24T10:45:10Z,PRIVILEGE_ELEVATION,george.baker,192.0.2.22,10.0.1.60,FAILED,auth-server,Unauthorized sudo attempt logged
+EVT-1026,2026-10-24T11:00:25Z,LOGIN,helen.hunt,192.0.2.25,10.0.1.50,SUCCESS,workstation-09,HR portal authentication
+EVT-1027,2026-10-24T11:10:05Z,FILE_ACCESS,helen.hunt,192.0.2.25,10.0.1.55,SUCCESS,fileserver-01,Accessed confidential HR folder
+EVT-1028,2026-10-24T11:20:18Z,LOGIN,ian.wright,203.0.113.88,10.0.1.50,FAILED,vpn-gateway,Password spraying test against account 1
+EVT-1029,2026-10-24T11:20:25Z,LOGIN,jack.sparrow,203.0.113.88,10.0.1.50,FAILED,vpn-gateway,Password spraying test against account 2
+EVT-1030,2026-10-24T11:20:31Z,LOGIN,karen.page,203.0.113.88,10.0.1.50,FAILED,vpn-gateway,Password spraying test against account 3
+EVT-1031,2026-10-24T11:20:39Z,LOGIN,leo.fitz,203.0.113.88,10.0.1.50,FAILED,vpn-gateway,Password spraying test against account 4
+EVT-1032,2026-10-24T11:20:47Z,LOGIN,matt.murdock,203.0.113.88,10.0.1.50,FAILED,vpn-gateway,Password spraying test against account 5
+EVT-1033,2026-10-24T11:20:56Z,LOGIN,natasha.romanoff,203.0.113.88,10.0.1.50,FAILED,vpn-gateway,Password spraying test against account 6
+EVT-1034,2026-10-24T11:21:05Z,LOGIN,oscar.isaac,203.0.113.88,10.0.1.50,BLOCKED,vpn-gateway,IP threshold blocked for password spray
+EVT-1035,2026-10-24T12:00:00Z,LOGOUT,alice.smith,192.0.2.10,10.0.1.50,SUCCESS,workstation-01,Lunch break workstation lock
+EVT-1036,2026-10-24T12:45:00Z,LOGIN,alice.smith,192.0.2.10,10.0.1.50,SUCCESS,workstation-01,Afternoon unlock session
+EVT-1037,2026-10-24T13:10:14Z,LOGIN,peter.parker,192.0.2.30,10.0.1.50,SUCCESS,workstation-10,Lab technician workstation login
+EVT-1038,2026-10-24T13:25:40Z,FILE_ACCESS,peter.parker,192.0.2.30,10.0.1.55,SUCCESS,fileserver-01,Read shared research notes
+EVT-1039,2026-10-24T14:00:15Z,LOGIN,quinn.mallory,192.0.2.32,10.0.1.50,SUCCESS,workstation-11,Design department login
+EVT-1040,2026-10-24T14:30:22Z,PORT_SCAN,scanner_bot,198.51.100.99,10.0.1.1,BLOCKED,edge-router,SYN probe across management ports blocked
+EVT-1041,2026-10-24T15:00:05Z,LOGIN,rachel.green,192.0.2.35,10.0.1.50,SUCCESS,workstation-12,Finance department portal login
+EVT-1042,2026-10-24T15:15:30Z,FILE_ACCESS,rachel.green,192.0.2.35,10.0.1.55,SUCCESS,fileserver-01,Downloaded payroll summary spreadsheet
+EVT-1043,2026-10-24T15:45:12Z,LOGIN,steve.rogers,192.0.2.38,10.0.1.50,SUCCESS,workstation-13,Security team administrative workstation login
+EVT-1044,2026-10-24T16:00:50Z,PRIVILEGE_ELEVATION,steve.rogers,192.0.2.38,10.0.1.60,SUCCESS,auth-server,Authorized sudo audit command
+EVT-1045,2026-10-24T16:30:10Z,LOGOUT,quinn.mallory,192.0.2.32,10.0.1.50,SUCCESS,workstation-11,End of shift standard logoff
+EVT-1046,2026-10-24T17:00:00Z,LOGOUT,rachel.green,192.0.2.35,10.0.1.50,SUCCESS,workstation-12,End of shift standard logoff
+EVT-1047,2026-10-24T17:15:20Z,LOGOUT,alice.smith,192.0.2.10,10.0.1.50,SUCCESS,workstation-01,End of shift standard logoff
+EVT-1048,2026-10-24T18:00:00Z,LOGOUT,steve.rogers,192.0.2.38,10.0.1.50,SUCCESS,workstation-13,End of shift standard logoff
+EVT-1049,2026-10-24T19:30:00Z,BACKUP_JOB,service_backup,10.0.1.200,10.0.1.55,SUCCESS,backup-server,Nightly scheduled snapshot completed
+EVT-1050,2026-10-24T21:45:11Z,LOGIN,tony.stark,192.0.2.50,10.0.1.50,SUCCESS,workstation-99,Late night authorized R&D access
+EVT-1051,2026-10-25T02:14:00Z,LOGIN,service_db,10.0.1.201,10.0.1.70,SUCCESS,database-cluster,Routine database synchronization job
+EVT-1052,2026-10-25T03:15:22Z,LOGIN,guest_account,198.51.100.120,10.0.1.50,FAILED,external-bastion,Off-hours unauthenticated probe attempt
+EVT-1053,2026-10-25T03:15:35Z,LOGIN,guest_account,198.51.100.120,10.0.1.50,FAILED,external-bastion,Off-hours unauthenticated probe attempt
+EVT-1054,2026-10-25T03:15:50Z,LOGIN,guest_account,198.51.100.120,10.0.1.50,FAILED,external-bastion,Off-hours unauthenticated probe attempt
+EVT-1055,2026-10-25T03:16:02Z,LOGIN,guest_account,198.51.100.120,10.0.1.50,BLOCKED,external-bastion,Bastion firewall dropped remote connection

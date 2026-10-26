@@ -1,0 +1,12 @@
+{
+  "TEST-ALT-01": {
+    "alert_id": "TEST-ALT-01",
+    "status": "False Positive",
+    "notes": "Contacted account owner.",
+    "disposition_reason": "Authorized penetration testing exercise.",
+    "checklist": {
+      "Review the affected account and event timestamps.": true
+    },
+    "updated_at": "2026-10-25 06:36:59Z"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "ALT-PERSIST-1": {
+    "alert_id": "ALT-PERSIST-1",
+    "status": "Investigating",
+    "notes": "Pushed to SOC tier-2 escalation queue.",
+    "disposition_reason": "Potential credential stuffing",
+    "checklist": {
+      "Review the failed and successful login sequence.": false,
+      "Check whether the source IP appears across other alerts.": false,
+      "Review the affected account and event timestamps.": false,
+      "Determine whether the activity is expected.": false,
+      "Record a reason for the final disposition.": false
+    },
+    "updated_at": "2026-10-25 06:37:00Z"
+  }
+}
